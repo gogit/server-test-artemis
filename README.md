@@ -18,10 +18,11 @@ mvn verify
 
 ## Steps
 
+The xserver-maven-plugin uses the broker.xml from test/resources
+
 1. The xserver-maven-plugin starts an embedded artemis server
-2. The xserver-maven-plugin uses the broker.xml from test/resources
-3. The test case (in this project) is then run
-4. The plugin stops the embedded artemis server 
+2. The test case (in this project) is then run
+3. The xserver-maven-plugin stops the embedded artemis server 
 
 ## Tips
 See the pom.xml file for details
