@@ -11,7 +11,7 @@ mvn verify
 
 ## Ingredients
 1. The embedded artemis server from 
-[xserver-maven-plugin][https://github.com/gogit/embedded-artemis]
+[embedded-artemis][https://github.com/gogit/embedded-artemis]
 2. The broker xml config for the artemis server from test/resources (this project)
 3. The xserver-maven-plugin from
 [xserver-maven-plugin][https://github.com/gogit/xserver-maven-plugin]
