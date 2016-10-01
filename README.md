@@ -9,16 +9,24 @@ Checkout the project and run mvn verify.
 mvn verify
 ~~~~~
 
-## Steps
-
-1. The plugin starts an embedded artemis server (from this project).
-2. The test case is then run
-3. The plugin stops the embedded artemis server 
-
+## Ingredients
+1. The embedded artemis server from 
+[xserver-maven-plugin][https://github.com/gogit/embedded-artemis]
+2. The broker xml config for the artemis server from test/resources (this project)
+3. The xserver-maven-plugin from
 [xserver-maven-plugin][https://github.com/gogit/xserver-maven-plugin]
 
+## Steps
 
-##trace
+1. The xserver-maven-plugin starts an embedded artemis server
+2. The xserver-maven-plugin uses the broker.xml from test/resources
+3. The test case (in this project) is then run
+4. The plugin stops the embedded artemis server 
+
+## Tips
+See the pom.xml file for details
+
+## Trace
 ~~~~~
 Oct 01, 2016 5:07:48 PM org.apache.activemq.artemis.core.server.impl.LiveOnlyActivation run
 INFO: AMQ221007: Server is now live
