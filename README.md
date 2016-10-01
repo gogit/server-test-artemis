@@ -17,9 +17,6 @@ mvn verify
 
 [xserver-maven-plugin][https://github.com/gogit/xserver-maven-plugin]
 
-##gotchas and wip
-
-If your test fails the 
 
 ##trace
 ~~~~~
